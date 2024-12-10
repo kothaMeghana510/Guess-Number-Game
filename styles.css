@@ -134,9 +134,6 @@ button:not(.closemodel){
 }
 
 @media (max-width: 500px){
-   h1{
-      font-size: 20pt;
-   }
     .card{
         height: 100%;
         width: 100%;

@@ -151,4 +151,6 @@ button:not(.closemodel){
         left: 30%;
         top: 5%;
     }
+   .secretnumber{
+      margin: 0 auto;
 }

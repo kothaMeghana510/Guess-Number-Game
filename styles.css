@@ -147,7 +147,7 @@ button:not(.closemodel){
     }
    .closemodel{
         position: relative;
-        left: 130px;
-        top: 20px;
+        left: 30%;
+        top: 5%;
     }
 }

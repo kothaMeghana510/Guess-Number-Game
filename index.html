@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number Game</title>
+    <link href = "styles.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>Guess My Number</h1>
+            <p class="secretnumber secretnumber-card" >GUESS ME!!</p>
+            <div class = "inputfield">
+                <input type = "number" class = "userinput" placeholder = " Enter a Valid Number" min = 0 /></form></br>  
+            </div>
+            <div class="interactive-section">
+                <button class = "check submit" id = "adjustment">Check!</button></br>
+                <p class = "message" id = "adjustment">Start Guessing...</p>
+                <score class = "label-score"><b>🏆 Your Score:</b></score>
+                <p class = "value">20</p>
+                <p class = "label-highscore" id = "adjustment"><b>High Score:</b></p>
+                <p class = "high">0</p>
+                <button class = "reset submit" id = "adjustment">Play Again!</button></br>
+            </div>
+        </div>
+        <div class = "winningmodel hidden">
+            <button class="closemodel">&times;</button>
+            <p>Congratulations!!</p>
+            <p>You Win the Game</p>
+            <p>score</p>
+            <p class = "winningscore"></p>
+            <button class = "reset submit" id = "adjustment">Play Again!</button></br>
+        </div>
+
+        <div class = "losingmodel hidden">
+            <button class="closemodel">&times;</button>
+            <p>You Lost the Game!!</p>
+            <p>Play Again!!</p>
+            <button class = "reset submit" id = "adjustment">Play Again!</button></br>
+        </div>
+        <div class="overlay hidden"></div>
+    </main>
+    <script src = "modelscript.js"></script>
+</body>
+</html>

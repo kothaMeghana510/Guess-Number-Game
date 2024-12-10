@@ -1,0 +1,148 @@
+*{
+   margin : 0;
+   padding : 0;
+   box-sizing : border-box; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Roboto Condensed;
+    /*background-image: url(images/milky-way.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color:  #1c1c1c;
+    color: WhiteSmoke;
+}
+
+.card{
+    height: 575px;
+    width: 450px;
+    border: 5px solid red;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px red;
+}
+
+.card:hover{
+    transform: scale(1.05, 1.05);
+    transition: 0.6s ease-in-out;
+}
+
+.submit:hover{
+    transform: scalex(1.2);
+    transition: 0.6s ease-in-out;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 35pt;
+}
+
+.secretnumber{
+    margin-bottom: 30px;
+    border: 3px;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secretnumber-card{
+    display: flex;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #FF073A;
+    background-color: #FF073A;
+}
+
+input{
+    height: 45px;
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.message{
+    margin-bottom: 20px;
+}
+
+button:not(.closemodel){
+    margin-bottom: 20px;
+    height: 50px;
+    width: 90px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #FF073A;
+    box-shadow: 0 0 10px #FF073A;
+}
+
+.value{
+    margin:20px;
+}
+
+.high{
+    margin: 20px;
+}
+
+.winningmodel, .losingmodel{
+    position: absolute;
+    left : 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(#8a2be2, #ff1493);
+    width: 520px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20pt;
+    line-height: 45px;
+    border-radius: 10px;
+    box-shadow: 2px 0  8px #ff1493;
+    z-index: 11;
+}
+
+.hidden{
+    display: none;
+}
+
+.closemodel{
+    font-size: 30pt;
+    border: none;
+    background-color: inherit;
+    position: relative;
+    left: 210px;
+    top: 45px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+ z-index: 10;
+}
+
+@media (max-width: 500px){
+    .card{
+        height: 100%;
+        width: 100%;
+    }
+    .card:hover{
+        transform: none;
+        transition: none;
+    }
+    .winningmodel, .losingmodel{
+        width: 460px;
+    }
+}

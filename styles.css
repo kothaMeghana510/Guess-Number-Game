@@ -143,6 +143,6 @@ button:not(.closemodel){
         transition: none;
     }
     .winningmodel, .losingmodel{
-        width: 460px;
+        width: 350px;
     }
 }
